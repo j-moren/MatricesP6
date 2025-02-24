@@ -30,7 +30,7 @@ public class Metodos {
         
     }
     public int[] sumaFilas(int[][] matriz){
-        int[] sumaFilas = new int[matriz.length]; // Crear rreglo para almacenar la suma de cada fila
+        int[] sumaFilas = new int[matriz.length]; // Crear arreglo para almacenar la suma de cada fila
 
         for (int i = 0; i < matriz.length; i++) {//Reocrre las Filas
             int suma = 0;// Variable para almacenar la suma de la fila actual
@@ -40,5 +40,17 @@ public class Metodos {
             sumaFilas[i] = suma;//Almacenar las Suma de la Fila en el Arreglo
         }
         return sumaFilas; // Retornar el arreglo con la suma de las filas
+    }
+    public int[] sumaColumnas(int[][] matriz){
+        int[] sumaColumnas = new int [matriz[0].length];// Crear arreglo para almacenar la suma de cada 
+        
+        for (int j = 0; j < matriz[0].length; j++) {
+            int suma = 0;// Variable para almacenar la suma de cada Columna Actual
+            for (int i = 0; i < matriz.length; i++) {//Recorrer las filas
+                suma += matriz[i][j]; //Sumar los Valores de la columna                
+            }
+            sumaColumnas[j] = suma;// Almacenar la suma de la Columna en el Arreglo
+        }
+        return sumaColumnas; // Retornar el arreglo con las sumas de las Columnas
     }
 }
