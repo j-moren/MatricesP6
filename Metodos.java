@@ -23,10 +23,22 @@ public class Metodos {
 
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
-                matriz [i][j] = rand.nextInt();//Generar Números de 0 al 100
+                matriz [i][j] = rand.nextInt(101);//Generar Números de 0 al 100
             }
             
         }
         
+    }
+    public int[] sumaFilas(int[][] matriz){
+        int[] sumaFilas = new int[matriz.length]; // Crear rreglo para almacenar la suma de cada fila
+
+        for (int i = 0; i < matriz.length; i++) {//Reocrre las Filas
+            int suma = 0;// Variable para almacenar la suma de la fila actual
+            for (int j = 0; j < matriz[i].length; j++) {// Recorr las columnas
+                suma += suma;// sumar los Valores de la Fila                
+            }
+            sumaFilas[i] = suma;//Almacenar las Suma de la Fila en el Arreglo
+        }
+        return sumaFilas; // Retornar el arreglo con la suma de las filas
     }
 }
