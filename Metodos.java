@@ -53,4 +53,12 @@ public class Metodos {
         }
         return sumaColumnas; // Retornar el arreglo con las sumas de las Columnas
     }
+    public void imprimirMatriz (int[][] matriz) {
+        for (int i = 0; i < matriz.length; i++) {// Recorrer las Filas
+            for (int j = 0; j < matriz[i].length; j++) {// Recorrer las columnas
+                System.out.print(matriz[i][j] + " ");// Imprimir cada elemnto                
+            }
+            System.out.println();// Imprimir nueva Línea después de cada fila
+        }
+    }
 }
