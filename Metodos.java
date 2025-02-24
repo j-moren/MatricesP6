@@ -61,4 +61,10 @@ public class Metodos {
             System.out.println();// Imprimir nueva Línea después de cada fila
         }
     }
+    public void imprimirVector (int[] vector) {
+        for (int i = 0; i < vector.length; i++) { //Recorre el Vector
+            System.out.print(vector[i] + " "); // Imprimir Cada Valor            
+        }
+        System.out.println(); // Imprimir Nueva Línea después del Vector
+    }
 }
